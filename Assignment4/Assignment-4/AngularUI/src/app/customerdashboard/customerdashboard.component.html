@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">
+        <div class="logo-image">
+              <img src="https://www.jcrinc.com/-/media/enterprise-imagery/logos/jcr-r-mark.png?h=152&w=532&hash=B19DACCFCF1F6ACDB0D829B425801D6F" class="img-fluid">
+        </div>
+    </a>
+    <h1>Joint Commission Resources</h1>
+    <div style="position:absolute; right:25px;"><a routerLink="/">LogOut</a></div>
+</nav>
+
+<br>
+<table style = "position:relative;" class="center">
+    <tr>
+       
+        <th>Tracer Name</th>
+        <th>Tracer Action</th>
+        <th>Observation Date</th>
+        <th>Observation Name</th>
+        <th>Total No. Of Observations</th>
+    </tr>
+    <tr *ngFor="let listdata of list">
+      
+        <td>{{listdata.tracername}}</td>
+        
+        <td><div class="dropdown" mdbDropdown>
+
+            <a mdbDropdownToggle mdbBtn color="primary" class="dropdown-toggle waves-light" type="button"
+              mdbWavesEffect>
+              Dropdown primary
+            </a>
+          
+            <div class="dropdown-menu dropdown-primary">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div></td>
+        <td>{{listdata.observationdate}}</td>
+        <td>{{listdata.observationname}}</td>
+        <td>{{listdata.noobservation}}</td>
+        &nbsp; &nbsp;
+        <td><button class="btn btn-dark" >Edit</button></td>
+       
+    </tr>
+</table>

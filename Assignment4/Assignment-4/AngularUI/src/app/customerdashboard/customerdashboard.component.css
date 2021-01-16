@@ -1,0 +1,27 @@
+th{
+  
+    padding: 10px;
+    width: 40%;
+    
+}
+table {
+   
+    padding: 10px;
+    width: 40%;
+}
+.center {
+    margin: auto;
+    width: 50%;
+   
+    padding: 10px;
+  }
+  td{
+    padding: 10px;
+      text-align: center;
+  }
+  .logo-image{
+    max-width: 100%;
+    width: 130px;
+    height: 43px !important;
+    max-height: 65px;
+}
